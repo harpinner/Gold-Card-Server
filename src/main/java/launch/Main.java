@@ -10,10 +10,15 @@ import org.apache.catalina.webresources.StandardRoot;
 import org.glassfish.jersey.server.ResourceConfig;
 import org.glassfish.jersey.servlet.ServletContainer;
 
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
 import javax.servlet.Servlet;
 
 
 public class Main {
+
+
+    private static EntityManagerFactory MANAGER = Persistence.createEntityManagerFactory("GOLD_CARD");
 
     public static void main(String[] args) throws Exception {
 
@@ -50,5 +55,6 @@ public class Main {
 
         tomcat.start();
         tomcat.getServer().await();
+        MANAGER.close();
     }
 }
