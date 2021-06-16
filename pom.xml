@@ -11,7 +11,7 @@
     <name>Gold Card Server Webapp</name>
     <url>http://maven.apache.org</url>
     <properties>
-        <tomcat.version>8.5.51</tomcat.version>
+        <tomcat.version>8.5.61</tomcat.version>
         <jeresy.version>2.30.1</jeresy.version>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
